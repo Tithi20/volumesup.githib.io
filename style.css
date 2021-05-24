@@ -31,7 +31,7 @@ body{
   }
 
   .wrapper{
-      width: 50%;
+      /* width: 50%; */
       width: 480px;
       /* overflow: hidden; */
       height:  90vh;
