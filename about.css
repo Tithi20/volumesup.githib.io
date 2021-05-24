@@ -1,0 +1,106 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.align{
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+}
+
+.cont{
+    padding: 70px 0;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 100;
+    font-size:20px;
+    color: white;
+}
+
+.about-container{
+    max-width: 1170px;
+    
+    margin: auto;
+
+}
+
+.about-row{
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+}
+
+.about-col{
+   
+        width:50%;
+        padding: 0 15px;
+        
+    
+}
+
+/*responsive*/
+@media (max-width: 767px) {
+    .about-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 574px) {
+    .aboutr-col{
+        width: 100%;
+        
+    }
+    
+}
+
+.about-col a{
+    color:  rgb(105, 102, 102);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 900;
+}
+
+.about-col a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.about-col h1{
+    color: rgb(105, 102, 102);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+.about-col p{
+    font-weight: 400;
+}
+
+nav{
+    animation: nav-load 400ms ease-in;
+}
+
+@keyframes nav-load {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+  body{
+    background-image: url("https://wallpapercave.com/wp/wp2104090.jpg");
+    background-size: cover;  
+}
+  
