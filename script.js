@@ -11,6 +11,8 @@ const wrapper = document.querySelector('.wrapper'),
   musicList = wrapper.querySelector('.music-list'),
   moreMusicBtn = wrapper.querySelector('#more-music'),
   closemoreMusic = musicList.querySelector('#close');
+  const menuList= document.querySelector("#menu-list");
+  const menu= document.querySelector("#menu");
 
 
   //load random music on load
@@ -301,3 +303,25 @@ function clicked(element){
   playingNow();
   
 }
+
+//on clicking menu icon, menu will open
+//we will use onclick 
+
+// function menu(){
+// menuList.classList.toggle("menu_show");
+// console.log("ff");
+// }
+
+menu.addEventListener("click",()=>{
+  if(menuList.style.opacity=="1"){
+    menuList.style.opacity="0";
+    
+  }
+  else{
+    menuList.style.opacity="1";
+   
+  }
+  console.log("fer");
+
+
+});

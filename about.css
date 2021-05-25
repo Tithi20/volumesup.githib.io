@@ -8,7 +8,13 @@ html{
     box-sizing: border-box;
 }
 
-
+#line{
+    border-left:1px solid white;
+    height:25px;
+    padding-right: 15px;
+    margin-left:10px;
+    
+}
 
 
 .align{

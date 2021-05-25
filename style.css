@@ -24,11 +24,91 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    /* background: linear-gradient(var(--pink) 0%, var(--violet) 100%); */
-    background: url("https://cdn.wallpapersafari.com/31/2/A7C1GQ.jpg");
+ 
+    background: #bdc3c7; 
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7); 
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); 
     background-repeat: no-repeat;
-  overflow: hidden;
+    overflow: hidden;
   }
+
+  #menu{
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    font-size: 30px;
+    opacity: 0.6;
+    color: var(--darkwhite);
+  }
+
+  #menu-list #menu1{
+  
+    margin-left: 2px;
+    padding-left: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgb(221, 216, 216);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+
+
+ #menu-list{
+   /* border: 1px solid black; */
+   position: absolute;
+   top: 50px;
+   left: 15px;
+   padding-top: 6px;
+   padding-left: 5px;
+   width: 27%;
+   background: #fff;
+   /* box-shadow: 3px 4px 8px 1px #fff; */
+   box-shadow: 3px 4px 8px 1px rgb(221, 216, 216);
+   border-radius: 15px;
+   transition:all 0.4s ease-in-out;
+   opacity: 0;
+   z-index: 1;
+   
+   
+ }
+
+ #menu-list ul li{
+  cursor: pointer;
+  list-style:none;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 5px;
+  color: var(--lightblack);
+  border-bottom: 1px solid #e5e5e5;
+  
+  padding-left: 20px;
+ }
+
+#menu-list ul li:last-child{
+  border-bottom: 0px;
+
+}
+
+.font{
+  font-size: 16px;
+  font-family: 'Padauk', sans-serif;
+  letter-spacing: 3px;
+  background: -webkit-linear-gradient(rgb(56, 0, 0), rgb(179, 168, 168));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
+.font:hover{
+font-size: 18px;
+padding-left: 10px;
+transition: all 0.2s ease-in;
+}
+
+#menu-list #men_u{
+  font-size: 20px;
+}
 
   .wrapper{
       /* width: 50%; */
@@ -39,8 +119,8 @@ body{
       border-radius: 15px;
       padding: 25px 30px;
       background: var(--white);
-      box-shadow: 0px 6px 15px var(--lightbshadow);
-      
+      box-shadow: 10px 10px 15px var(--lightbshadow);
+      margin-top: 60px;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -216,11 +296,6 @@ body{
      bottom: 0;
     opacity: 1;
     pointer-events: auto; 
-  
-    
-  
-    
-    
   }
 
   .music-list .header .row{
